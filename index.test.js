@@ -18,3 +18,17 @@ test("When calcAverageHeight called with an object containing one person we get 
   };
   expect(calcAverageHeight(people)).toBe(173);
 });
+
+test("When calcAverageHeight called with an object containing two people we get the averidge height", () => {
+  const people = {
+    Alex: {
+      height: 173,
+      weigth: 92,
+    },
+    Larry: {
+      height: 153,
+      weight: 87,
+    },
+  };
+  expect(calcAverageHeight(people)).toBe(163);
+});
