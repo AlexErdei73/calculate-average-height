@@ -15,7 +15,8 @@ function calcAverageHeight(data) {
     (prevValue, nextPerson) => prevValue + nextPerson.height,
     0
   );
-  return peopleArr && peopleArr.length > 0 ? sum : null;
+  const n = peopleArr.length;
+  return n ? sum / n : null;
 }
 
 console.log("Initial data: ", people);
