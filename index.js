@@ -10,6 +10,7 @@ const people = {
 };
 
 function calcAverageHeight(data) {
+  if (typeof data !== "object") return null;
   const peopleArr = Object.values(data);
   const sum = peopleArr.reduce(
     (prevValue, nextPerson) => prevValue + nextPerson.height,
