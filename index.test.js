@@ -9,6 +9,10 @@ test("When calcAverageHeight called with an empty object we get null", () => {
   expect(calcAverageHeight(people)).toBe(null);
 });
 
+test("When calcAverageHeight called without any input we get null", () => {
+  expect(calcAverageHeight()).toBe(null);
+});
+
 test("When calcAverageHeight called with an object containing one person we get the person's height", () => {
   const people = {
     Alex: {
